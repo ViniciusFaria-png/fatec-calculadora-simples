@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
     <title>Calculadora Simples</title>
 </head>
 <body>
-    <input type="text" placeholder="Digite um número">
-    <input type="text" placeholder="Digite outro número">
-    <button>+</button>
-    <button>-</button>
-    <button>x</button>
-    <button>/</button>
-    <hr>
-    <div></div>
+    <h1>Calculadora Simples</h1>
+    <main class="calculadora">
+        <input id="numero1" type="number" placeholder="Digite um número">
+        <input id="numero2" type="number" placeholder="Digite outro número">
+        <div class="botoes">
+            <button id="botao-soma">+</button>
+            <button id="botao-subtracao">-</button>
+            <button id="botao-multiplicacao">x</button>
+            <button id="botao-divisao">/</button>
+        </div>
+        <hr>
+        <div class="resultado">
+            <span id="resultado">0</span>
+        </div>
+    </main>
 </body>
 </html>
